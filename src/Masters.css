@@ -1,0 +1,138 @@
+.master-section {
+  background-color: #EFECE4; 
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 12%;
+  box-sizing: border-box;
+}
+
+.master-container {
+  display: flex;
+  gap: 80px; 
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+}
+
+.master-image-block {
+  flex: 1;
+  height: 580px; 
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(74, 74, 74, 0.05);
+}
+
+.master-single-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease;
+}
+
+.master-image-block:hover .master-single-photo {
+  transform: scale(1.03);
+}
+
+.master-content-block {
+  flex: 1.2; 
+  display: flex;
+  flex-direction: column;
+}
+
+.master-tag {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #8C877D;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.master-single-title {
+  font-family: 'Times New Roman', serif;
+  font-size: 54px;
+  font-weight: 300;
+  color: #484639;
+  margin: 0 0 30px 0;
+  line-height: 1.1;
+}
+
+.master-philosophy {
+  font-size: 18px;
+  line-height: 1.7;
+  color: #5A5A5A;
+  font-style: italic; 
+  margin: 0 0 45px 0;
+  position: relative;
+}
+
+.master-stats {
+  display: flex;
+  gap: 50px;
+  border-top: 1px solid #DFDBD1;
+  padding-top: 35px;
+}
+
+.stat-item h4 {
+  font-family: 'Times New Roman', serif;
+  font-size: 32px;
+  color: #484639;
+  margin: 0 0 5px 0;
+  font-weight: normal;
+}
+
+.stat-item p {
+  font-size: 14px;
+  color: #8C877D;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/*АДАПТИВ*/
+@media (max-width: 992px) {
+  .master-container {
+    gap: 40px;
+  }
+  .master-single-title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .master-section {
+    padding: 60px 20px;
+  }
+  
+  .master-container {
+    flex-direction: column; 
+    gap: 35px;
+    text-align: center;
+  }
+  
+  .master-image-block {
+    width: 100%;
+    height: 380px; 
+  }
+  
+  .master-content-block {
+    align-items: center;
+  }
+  
+  .master-single-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .master-philosophy {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  
+  .master-stats {
+    justify-content: center;
+    width: 100%;
+    gap: 30px;
+  }
+}
